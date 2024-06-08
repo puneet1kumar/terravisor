@@ -1,0 +1,209 @@
+{
+    "format_version": "0.1",
+    "terraform_version": "0.12.30",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "aws_iam_policy.new_iam_policy",
+                    "mode": "managed",
+                    "type": "aws_iam_policy",
+                    "name": "new_iam_policy",
+                    "provider_name": "aws",
+                    "schema_version": 0,
+                    "values": {
+                        "description": "An IAM policy that has overly broad permissions",
+                        "name": "new_iam_policy",
+                        "name_prefix": null,
+                        "path": "/",
+                        "policy": "{\"Statement\":[{\"Action\":[\"s3:BypassGovernanceRetention\",\"s3:CreateBucket\",\"s3:CreateJob\",\"s3:DeleteAccessPoint\",\"s3:*\"],\"Effect\":\"Allow\",\"Resource\":\"*\",\"Sid\":\"S3Access\"}],\"Version\":\"2012-10-17\"}",
+                        "tags": null
+                    }
+                },
+                {
+                    "address": "aws_instance.new_ec2",
+                    "mode": "managed",
+                    "type": "aws_instance",
+                    "name": "new_ec2",
+                    "provider_name": "aws",
+                    "schema_version": 1,
+                    "values": {
+                        "ami": "ami-830c94e3",
+                        "credit_specification": [],
+                        "disable_api_termination": null,
+                        "ebs_optimized": null,
+                        "get_password_data": false,
+                        "hibernation": null,
+                        "iam_instance_profile": null,
+                        "instance_initiated_shutdown_behavior": null,
+                        "instance_type": "t2.micro",
+                        "monitoring": null,
+                        "source_dest_check": true,
+                        "tags": {
+                            "Name": "ExampleInstance"
+                        },
+                        "timeouts": null,
+                        "user_data": null,
+                        "user_data_base64": null,
+                        "volume_tags": null
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "aws_iam_policy.new_iam_policy",
+            "mode": "managed",
+            "type": "aws_iam_policy",
+            "name": "new_iam_policy",
+            "provider_name": "aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "description": "An IAM policy that has overly broad permissions",
+                    "name": "new_iam_policy",
+                    "name_prefix": null,
+                    "path": "/",
+                    "policy": "{\"Statement\":[{\"Action\":[\"s3:BypassGovernanceRetention\",\"s3:CreateBucket\",\"s3:CreateJob\",\"s3:DeleteAccessPoint\",\"s3:*\"],\"Effect\":\"Allow\",\"Resource\":\"*\",\"Sid\":\"S3Access\"}],\"Version\":\"2012-10-17\"}",
+                    "tags": null
+                },
+                "after_unknown": {
+                    "arn": true,
+                    "id": true,
+                    "policy_id": true
+                }
+            }
+        },
+        {
+            "address": "aws_instance.new_ec2",
+            "mode": "managed",
+            "type": "aws_instance",
+            "name": "new_ec2",
+            "provider_name": "aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "ami": "ami-830c94e3",
+                    "credit_specification": [],
+                    "disable_api_termination": null,
+                    "ebs_optimized": null,
+                    "get_password_data": false,
+                    "hibernation": null,
+                    "iam_instance_profile": null,
+                    "instance_initiated_shutdown_behavior": null,
+                    "instance_type": "t2.micro",
+                    "monitoring": null,
+                    "source_dest_check": true,
+                    "tags": {
+                        "Name": "ExampleInstance"
+                    },
+                    "timeouts": null,
+                    "user_data": null,
+                    "user_data_base64": null,
+                    "volume_tags": null
+                },
+                "after_unknown": {
+                    "arn": true,
+                    "associate_public_ip_address": true,
+                    "availability_zone": true,
+                    "cpu_core_count": true,
+                    "cpu_threads_per_core": true,
+                    "credit_specification": [],
+                    "ebs_block_device": true,
+                    "enclave_options": true,
+                    "ephemeral_block_device": true,
+                    "host_id": true,
+                    "id": true,
+                    "instance_state": true,
+                    "ipv6_address_count": true,
+                    "ipv6_addresses": true,
+                    "key_name": true,
+                    "metadata_options": true,
+                    "network_interface": true,
+                    "outpost_arn": true,
+                    "password_data": true,
+                    "placement_group": true,
+                    "primary_network_interface_id": true,
+                    "private_dns": true,
+                    "private_ip": true,
+                    "public_dns": true,
+                    "public_ip": true,
+                    "root_block_device": true,
+                    "secondary_private_ips": true,
+                    "security_groups": true,
+                    "subnet_id": true,
+                    "tags": {},
+                    "tenancy": true,
+                    "vpc_security_group_ids": true
+                }
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "aws": {
+                "name": "aws",
+                "expressions": {
+                    "profile": {
+                        "constant_value": "tf-example"
+                    },
+                    "region": {
+                        "constant_value": "us-east-1"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "aws_iam_policy.new_iam_policy",
+                    "mode": "managed",
+                    "type": "aws_iam_policy",
+                    "name": "new_iam_policy",
+                    "provider_config_key": "aws",
+                    "expressions": {
+                        "description": {
+                            "constant_value": "An IAM policy that has overly broad permissions"
+                        },
+                        "name": {
+                            "constant_value": "new_iam_policy"
+                        },
+                        "path": {
+                            "constant_value": "/"
+                        },
+                        "policy": {}
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "aws_instance.new_ec2",
+                    "mode": "managed",
+                    "type": "aws_instance",
+                    "name": "new_ec2",
+                    "provider_config_key": "aws",
+                    "expressions": {
+                        "ami": {
+                            "constant_value": "ami-830c94e3"
+                        },
+                        "instance_type": {
+                            "constant_value": "t2.micro"
+                        },
+                        "tags": {
+                            "constant_value": {
+                                "Name": "ExampleInstance"
+                            }
+                        }
+                    },
+                    "schema_version": 1
+                }
+            ]
+        }
+    }
+}
