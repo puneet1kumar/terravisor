@@ -26,3 +26,8 @@ Set the default command to execute
 t when creating a new container
 CMD service nainx start
 
+worker procesaes I7
+ivents [ worker connections 1024; 1
+http include sendfile oni Berver root index server listen 90:
+mime.types;
+lusr/share/nainx/htu1/: index.html: name localhost;
