@@ -5,7 +5,7 @@ Focus: SAP SD order-to-cash, automotive EDI, IDoc processing and production supp
 
 
 1. Executive Summary
-This Document of Understanding presents Puneet Kumar as an SAP SD Senior Consultant with 5+ years of experience and establishes his understanding of customer-facing EDI business processes in SAP ERP. The document consolidates the KT topics into a structured view of process ownership, message flows, IDoc architecture, monitoring, and support responsibilities.
+This Document of Understanding presents understanding of customer-facing EDI business processes in SAP ERP. The document consolidates the KT topics into a structured view of process ownership, message flows, IDoc architecture, monitoring, and support responsibilities.
 
 
 Key capability statement
